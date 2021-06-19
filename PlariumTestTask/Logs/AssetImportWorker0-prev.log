@@ -1,0 +1,733 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.5f1 (8095aa901b9b) revision 8426922'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Education; OS build 19042.1052; Version 2009; 64bit' Language: 'ru' Physical Memory: 16347 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Dmitriy/Desktop/Projects/PlariumTestTask/PlariumTestTask
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51293
+Successfully changed project path to: C:/Users/Dmitriy/Desktop/Projects/PlariumTestTask/PlariumTestTask
+C:/Users/Dmitriy/Desktop/Projects/PlariumTestTask/PlariumTestTask
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.74 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.5f1 (8095aa901b9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Dmitriy/Desktop/Projects/PlariumTestTask/PlariumTestTask/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   
+    VRAM:     4018 MB
+    Driver:   27.21.14.5709
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002740 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 47.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.296 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001140 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.239 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.9 MB.
+System memory in use after: 84.9 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2250.
+Total: 2.856800 ms (FindLiveObjects: 0.383800 ms CreateObjectMapping: 0.255400 ms MarkObjects: 2.068100 ms  DeleteObjects: 0.148100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources
+  artifactKey: Guid(b64b2bab643260d4abb7f204be228d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(b64b2bab643260d4abb7f204be228d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33db35f527859b9d3decd603c3ce4b19') in 0.012872 seconds
+  Import took 0.017728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.219402 seconds.
+  path: Assets/Resources/Graphics
+  artifactKey: Guid(6792014f05634714baf458a1930c0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics using Guid(6792014f05634714baf458a1930c0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532f4454e15d3820b57a6be33beb4740') in 0.008530 seconds
+  Import took 0.012097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Resources/Graphics
+  artifactKey: Guid(6792014f05634714baf458a1930c0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics using Guid(6792014f05634714baf458a1930c0d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532f4454e15d3820b57a6be33beb4740') in 0.003608 seconds
+  Import took 0.008081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.697891 seconds.
+  path: Assets/Resources/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb5929e1a493cab749065c12a5f981c') in 0.142582 seconds
+  Import took 0.145724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Resources/Graphics/L16,R1,C1,Powered cannon II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(fea73c10e74f639479b25417bffbf3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L16,R1,C1,Powered cannon II - Enemy,hidden,normal,255.png using Guid(fea73c10e74f639479b25417bffbf3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f90d46c6f2ca0ccb466c092f226cf59') in 0.018549 seconds
+  Import took 0.021445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Graphics/L20,R1,C1,Fast cannon III - Enemy,hidden,normal,255.png
+  artifactKey: Guid(545f91a4d8007a24a9725a75c89bb8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L20,R1,C1,Fast cannon III - Enemy,hidden,normal,255.png using Guid(545f91a4d8007a24a9725a75c89bb8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dacf44e221ed5d163128e2184916aac') in 0.020946 seconds
+  Import took 0.024115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Graphics/L22,R1,C1,Fast cannon II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(d81321ca9c226d840809366456565412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L22,R1,C1,Fast cannon II - Enemy,hidden,normal,255.png using Guid(d81321ca9c226d840809366456565412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2ef1f8f9f584cca17093f849f5adb1') in 0.020122 seconds
+  Import took 0.023214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Resources/Graphics/L26,R1,C1,Tower III - Enemy,visible,normal,255.png
+  artifactKey: Guid(4c17e375f9b97654fb66c9cf57efc80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L26,R1,C1,Tower III - Enemy,visible,normal,255.png using Guid(4c17e375f9b97654fb66c9cf57efc80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065a8f27a8ee3b616de45ea9e567b21b') in 0.021587 seconds
+  Import took 0.025468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Resources/Graphics/L03,R1,C1,Stone 1,hidden,normal,255.png
+  artifactKey: Guid(f7e95eba619c9914e98888c43daab8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L03,R1,C1,Stone 1,hidden,normal,255.png using Guid(f7e95eba619c9914e98888c43daab8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30df9e461365844cc19aba5ee197fba8') in 0.018324 seconds
+  Import took 0.021398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Resources/Graphics/L10,R1,C1,Base II - Enemy,visible,normal,255.png
+  artifactKey: Guid(5ec376910ed59ed4296b5ef92e2ed3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L10,R1,C1,Base II - Enemy,visible,normal,255.png using Guid(5ec376910ed59ed4296b5ef92e2ed3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c8420eb040fd16078993833cc3e939') in 0.018947 seconds
+  Import took 0.022752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Graphics/L19,R1,C1,Powered cannon I - Player,hidden,normal,255.png
+  artifactKey: Guid(bd6ceeb789bf190469b54c079f849542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L19,R1,C1,Powered cannon I - Player,hidden,normal,255.png using Guid(bd6ceeb789bf190469b54c079f849542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5272cf075cb953a05fba72753bf84ac') in 0.019406 seconds
+  Import took 0.022648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png
+  artifactKey: Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png using Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884046ad5f1cc212888114e9c060f6cd') in 0.019065 seconds
+  Import took 0.022041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Graphics/L12,R1,C1,Base I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(0aba01bf430e527428f6f5d9e81ab3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L12,R1,C1,Base I - Enemy,hidden,normal,255.png using Guid(0aba01bf430e527428f6f5d9e81ab3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40974cecdb7c03be7925d32056ea5513') in 0.023065 seconds
+  Import took 0.026201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Graphics/L29,R1,C1,Tower II - Player,hidden,normal,255.png
+  artifactKey: Guid(099a60065a38df8428f987fd5136642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L29,R1,C1,Tower II - Player,hidden,normal,255.png using Guid(099a60065a38df8428f987fd5136642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453cdd432ceb780e2e4daa18058fa6ca') in 0.014425 seconds
+  Import took 0.017528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Graphics/L17,R1,C1,Powered cannon II - Player,hidden,normal,255.png
+  artifactKey: Guid(367a5f805f66d464a98a2458c5f6a3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L17,R1,C1,Powered cannon II - Player,hidden,normal,255.png using Guid(367a5f805f66d464a98a2458c5f6a3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f1b12ea1c52f531c9ef8809863f72f') in 0.014570 seconds
+  Import took 0.017715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Graphics/L18,R1,C1,Powered cannon I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(2de06d5d96c2c3c40b4cacaaac0dcb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L18,R1,C1,Powered cannon I - Enemy,hidden,normal,255.png using Guid(2de06d5d96c2c3c40b4cacaaac0dcb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe09f3ed8c6723162656332c7ef57ca4') in 0.014536 seconds
+  Import took 0.017752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Resources/Graphics/L15,R1,C1,Powered cannon III - Player,hidden,normal,255.png
+  artifactKey: Guid(3175c635b2a3a9342aab4862867848e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L15,R1,C1,Powered cannon III - Player,hidden,normal,255.png using Guid(3175c635b2a3a9342aab4862867848e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6da6cf37b2eb5fe516bc8198da47bcc') in 0.013927 seconds
+  Import took 0.017089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Resources/Graphics/L30,R1,C1,Tower I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(dae2a660168660647939e8245804c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L30,R1,C1,Tower I - Enemy,hidden,normal,255.png using Guid(dae2a660168660647939e8245804c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec45e7e3fa41248a84cad764a6139d0c') in 0.014859 seconds
+  Import took 0.018314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Resources/Graphics/L06,R1,C1,Flag Enemy,hidden,normal,255.png
+  artifactKey: Guid(412ff32e703c7034a91e163b76337303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L06,R1,C1,Flag Enemy,hidden,normal,255.png using Guid(412ff32e703c7034a91e163b76337303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ebe0bc9ebe7b03205ccab071714da8') in 0.015224 seconds
+  Import took 0.018261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Resources/Graphics/L11,R1,C1,Base II - Player,hidden,normal,255.png
+  artifactKey: Guid(355e2a659d2aeb04f9fddc4ce4c594be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L11,R1,C1,Base II - Player,hidden,normal,255.png using Guid(355e2a659d2aeb04f9fddc4ce4c594be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed14c0faf1a95e39f1dedf20f95071d') in 0.014422 seconds
+  Import took 0.017383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Graphics/L09,R1,C1,Base III - Player,hidden,normal,255.png
+  artifactKey: Guid(20ffd9376e157c64baf8ea2681e076c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L09,R1,C1,Base III - Player,hidden,normal,255.png using Guid(20ffd9376e157c64baf8ea2681e076c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ebec22647f8f23092f91ae263d0675') in 0.014720 seconds
+  Import took 0.018762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Graphics/L27,R1,C1,Tower III - Player,hidden,normal,255.png
+  artifactKey: Guid(a5d66c7bf6f02284985e80a7dcc36b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L27,R1,C1,Tower III - Player,hidden,normal,255.png using Guid(a5d66c7bf6f02284985e80a7dcc36b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57d2233a36a4eb05c827955312e27f3') in 0.016098 seconds
+  Import took 0.019230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Graphics/L28,R1,C1,Tower II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(8b89585b27c1b184288141e9ec8091a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L28,R1,C1,Tower II - Enemy,hidden,normal,255.png using Guid(8b89585b27c1b184288141e9ec8091a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8166ef7bf85f5470c3b36f1e92bb8ccd') in 0.014401 seconds
+  Import took 0.017484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Graphics/L31,R1,C1,Tower I - Player,hidden,normal,255.png
+  artifactKey: Guid(c4c1b194c7563a14d932b04ab051a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L31,R1,C1,Tower I - Player,hidden,normal,255.png using Guid(c4c1b194c7563a14d932b04ab051a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea029538e6bf547badcb64c02f7d236') in 0.014610 seconds
+  Import took 0.017815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Graphics/L24,R1,C1,Fast cannon I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(92d0c572352109c4db0a9c008111ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L24,R1,C1,Fast cannon I - Enemy,hidden,normal,255.png using Guid(92d0c572352109c4db0a9c008111ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf04217e7b86b946d5faf0db960da65') in 0.014852 seconds
+  Import took 0.017878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Resources/Graphics/L13,R1,C1,Base I - Player,hidden,normal,255.png
+  artifactKey: Guid(33c395ac3d5224449b92328ba8bceec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L13,R1,C1,Base I - Player,hidden,normal,255.png using Guid(33c395ac3d5224449b92328ba8bceec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea434f08d2d889b615cf4de01aab441a') in 0.014536 seconds
+  Import took 0.017588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Resources/Graphics/L08,R1,C1,Base III - Enemy,hidden,normal,255.png
+  artifactKey: Guid(97a9ca73d4da67641b300ba63ed6a8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L08,R1,C1,Base III - Enemy,hidden,normal,255.png using Guid(97a9ca73d4da67641b300ba63ed6a8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3da5a38b760fbd13b2cec2b4d63bd9') in 0.015978 seconds
+  Import took 0.018905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Graphics/L14,R1,C1,Powered cannon III - Enemy,visible,normal,255.png
+  artifactKey: Guid(799d92f9839e75a4ab61852054f19714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L14,R1,C1,Powered cannon III - Enemy,visible,normal,255.png using Guid(799d92f9839e75a4ab61852054f19714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b670777ade6c0490e74e357bad6ad5') in 0.019310 seconds
+  Import took 0.022692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Resources/Graphics/L23,R1,C1,Fast cannon II - Player,hidden,normal,255.png
+  artifactKey: Guid(d0b37f02d4cac394bb6f507b8ead1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L23,R1,C1,Fast cannon II - Player,hidden,normal,255.png using Guid(d0b37f02d4cac394bb6f507b8ead1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499ee9751fc7071e9227f4d7e6cc6015') in 0.014113 seconds
+  Import took 0.017412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Resources/Graphics/L25,R1,C1,Fast cannon I - Player,hidden,normal,255.png
+  artifactKey: Guid(028dc81fbf76a454bbd51972919e3d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L25,R1,C1,Fast cannon I - Player,hidden,normal,255.png using Guid(028dc81fbf76a454bbd51972919e3d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4cd33f21aa538eb584ba944fb9a2ae') in 0.015476 seconds
+  Import took 0.018411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Resources/Graphics/L02,R1,C1,Stone 2,hidden,normal,255.png
+  artifactKey: Guid(ebfec2afc7c20994183505a6266fe1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L02,R1,C1,Stone 2,hidden,normal,255.png using Guid(ebfec2afc7c20994183505a6266fe1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3686f1a9a9f6b060c9f34aa035a71114') in 0.014844 seconds
+  Import took 0.018223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Graphics/L07,R1,C1,Trucks,visible,normal,255.png
+  artifactKey: Guid(577003b292f90fe4e8d0710d0d39d256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L07,R1,C1,Trucks,visible,normal,255.png using Guid(577003b292f90fe4e8d0710d0d39d256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c85a3430184c7ce4ae8fbf0048974a3') in 0.014496 seconds
+  Import took 0.017669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resources/Graphics/L05,R1,C1,Flag Player,hidden,normal,255.png
+  artifactKey: Guid(71ac371d888423949991928f863ce139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L05,R1,C1,Flag Player,hidden,normal,255.png using Guid(71ac371d888423949991928f863ce139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab6d54b7f5204aa1de2526c80cae46a') in 0.016263 seconds
+  Import took 0.019346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Resources/Graphics/L21,R1,C1,Fast cannon III - Player,hidden,normal,255.png
+  artifactKey: Guid(b6d1495aa202de040bd691b653909a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L21,R1,C1,Fast cannon III - Player,hidden,normal,255.png using Guid(b6d1495aa202de040bd691b653909a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63c906855c04649d140c159777923ef') in 0.014057 seconds
+  Import took 0.017078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.198417 seconds.
+  path: Assets/Resources/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77e14045f83b2bd199e588eb97bc924') in 0.014028 seconds
+  Import took 0.017463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Graphics/L16,R1,C1,Powered cannon II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(fea73c10e74f639479b25417bffbf3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L16,R1,C1,Powered cannon II - Enemy,hidden,normal,255.png using Guid(fea73c10e74f639479b25417bffbf3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b0a7be66966d453340574bb6afcf30') in 0.011807 seconds
+  Import took 0.014858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/Graphics/L20,R1,C1,Fast cannon III - Enemy,hidden,normal,255.png
+  artifactKey: Guid(545f91a4d8007a24a9725a75c89bb8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L20,R1,C1,Fast cannon III - Enemy,hidden,normal,255.png using Guid(545f91a4d8007a24a9725a75c89bb8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061d3f8ad4e3e77c1345acc3b97131f0') in 0.011871 seconds
+  Import took 0.015118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Graphics/L22,R1,C1,Fast cannon II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(d81321ca9c226d840809366456565412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L22,R1,C1,Fast cannon II - Enemy,hidden,normal,255.png using Guid(d81321ca9c226d840809366456565412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a0f2c1d1407cde3b8b98c2b8aa6e60') in 0.014389 seconds
+  Import took 0.017985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Resources/Graphics/L26,R1,C1,Tower III - Enemy,visible,normal,255.png
+  artifactKey: Guid(4c17e375f9b97654fb66c9cf57efc80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L26,R1,C1,Tower III - Enemy,visible,normal,255.png using Guid(4c17e375f9b97654fb66c9cf57efc80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56e04ef832112553dcf2773fff6a4bb') in 0.011484 seconds
+  Import took 0.014488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Resources/Graphics/L03,R1,C1,Stone 1,hidden,normal,255.png
+  artifactKey: Guid(f7e95eba619c9914e98888c43daab8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L03,R1,C1,Stone 1,hidden,normal,255.png using Guid(f7e95eba619c9914e98888c43daab8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b16571ad6a4d0b6ad0da028bbcfbce') in 0.015541 seconds
+  Import took 0.018547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Graphics/L10,R1,C1,Base II - Enemy,visible,normal,255.png
+  artifactKey: Guid(5ec376910ed59ed4296b5ef92e2ed3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L10,R1,C1,Base II - Enemy,visible,normal,255.png using Guid(5ec376910ed59ed4296b5ef92e2ed3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '325b24b40810f764411975a2a4d5cdee') in 0.010222 seconds
+  Import took 0.013160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resources/Graphics/L19,R1,C1,Powered cannon I - Player,hidden,normal,255.png
+  artifactKey: Guid(bd6ceeb789bf190469b54c079f849542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L19,R1,C1,Powered cannon I - Player,hidden,normal,255.png using Guid(bd6ceeb789bf190469b54c079f849542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64c51a7905d171a8569fa98e344814c') in 0.009538 seconds
+  Import took 0.013054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png
+  artifactKey: Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png using Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885236ca445feaf66f029b49ddf8973a') in 0.015545 seconds
+  Import took 0.019466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Resources/Graphics/L12,R1,C1,Base I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(0aba01bf430e527428f6f5d9e81ab3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L12,R1,C1,Base I - Enemy,hidden,normal,255.png using Guid(0aba01bf430e527428f6f5d9e81ab3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ae70b8f654b834f947ad322fab5d25') in 0.010996 seconds
+  Import took 0.014368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Graphics/L29,R1,C1,Tower II - Player,hidden,normal,255.png
+  artifactKey: Guid(099a60065a38df8428f987fd5136642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L29,R1,C1,Tower II - Player,hidden,normal,255.png using Guid(099a60065a38df8428f987fd5136642d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e34142ab1e77a708b996b1fc283481f') in 0.009218 seconds
+  Import took 0.012514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Graphics/L17,R1,C1,Powered cannon II - Player,hidden,normal,255.png
+  artifactKey: Guid(367a5f805f66d464a98a2458c5f6a3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L17,R1,C1,Powered cannon II - Player,hidden,normal,255.png using Guid(367a5f805f66d464a98a2458c5f6a3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979ba6b6c68aa9ea6652213dfbe74918') in 0.009189 seconds
+  Import took 0.012320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Resources/Graphics/L18,R1,C1,Powered cannon I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(2de06d5d96c2c3c40b4cacaaac0dcb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L18,R1,C1,Powered cannon I - Enemy,hidden,normal,255.png using Guid(2de06d5d96c2c3c40b4cacaaac0dcb0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bf48f73fcb89573ede8ae430bde1ca9') in 0.010011 seconds
+  Import took 0.012955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Resources/Graphics/L15,R1,C1,Powered cannon III - Player,hidden,normal,255.png
+  artifactKey: Guid(3175c635b2a3a9342aab4862867848e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L15,R1,C1,Powered cannon III - Player,hidden,normal,255.png using Guid(3175c635b2a3a9342aab4862867848e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55481878061a0d90d99eafd091cb3ac7') in 0.013507 seconds
+  Import took 0.016997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Resources/Graphics/L30,R1,C1,Tower I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(dae2a660168660647939e8245804c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L30,R1,C1,Tower I - Enemy,hidden,normal,255.png using Guid(dae2a660168660647939e8245804c131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee427b0e49ee364f7d905ade59f688cd') in 0.017942 seconds
+  Import took 0.028312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Resources/Graphics/L06,R1,C1,Flag Enemy,hidden,normal,255.png
+  artifactKey: Guid(412ff32e703c7034a91e163b76337303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L06,R1,C1,Flag Enemy,hidden,normal,255.png using Guid(412ff32e703c7034a91e163b76337303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '116a0a84f0cc399bd1633c8d0440bfa9') in 0.013691 seconds
+  Import took 0.016912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Resources/Graphics/L11,R1,C1,Base II - Player,hidden,normal,255.png
+  artifactKey: Guid(355e2a659d2aeb04f9fddc4ce4c594be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L11,R1,C1,Base II - Player,hidden,normal,255.png using Guid(355e2a659d2aeb04f9fddc4ce4c594be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4433cfaf7dd738f696cd2c2c8f84ec4') in 0.009149 seconds
+  Import took 0.012464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Resources/Graphics/L09,R1,C1,Base III - Player,hidden,normal,255.png
+  artifactKey: Guid(20ffd9376e157c64baf8ea2681e076c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L09,R1,C1,Base III - Player,hidden,normal,255.png using Guid(20ffd9376e157c64baf8ea2681e076c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f6f4fab55506c77a568522110e2996') in 0.013553 seconds
+  Import took 0.017005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Resources/Graphics/L27,R1,C1,Tower III - Player,hidden,normal,255.png
+  artifactKey: Guid(a5d66c7bf6f02284985e80a7dcc36b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L27,R1,C1,Tower III - Player,hidden,normal,255.png using Guid(a5d66c7bf6f02284985e80a7dcc36b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200713f8d51f415ae2f2fd31cb27905d') in 0.009051 seconds
+  Import took 0.012469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resources/Graphics/L28,R1,C1,Tower II - Enemy,hidden,normal,255.png
+  artifactKey: Guid(8b89585b27c1b184288141e9ec8091a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L28,R1,C1,Tower II - Enemy,hidden,normal,255.png using Guid(8b89585b27c1b184288141e9ec8091a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689af0bd0a52842bf969b05d6e61a940') in 0.009246 seconds
+  Import took 0.012651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Resources/Graphics/L31,R1,C1,Tower I - Player,hidden,normal,255.png
+  artifactKey: Guid(c4c1b194c7563a14d932b04ab051a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L31,R1,C1,Tower I - Player,hidden,normal,255.png using Guid(c4c1b194c7563a14d932b04ab051a551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531b91fd437c83c99e62d7d084a75db7') in 0.010061 seconds
+  Import took 0.013286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Resources/Graphics/L24,R1,C1,Fast cannon I - Enemy,hidden,normal,255.png
+  artifactKey: Guid(92d0c572352109c4db0a9c008111ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L24,R1,C1,Fast cannon I - Enemy,hidden,normal,255.png using Guid(92d0c572352109c4db0a9c008111ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62a219c2380b45b68f31a10b9ba5e56') in 0.008877 seconds
+  Import took 0.011949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Graphics/L13,R1,C1,Base I - Player,hidden,normal,255.png
+  artifactKey: Guid(33c395ac3d5224449b92328ba8bceec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L13,R1,C1,Base I - Player,hidden,normal,255.png using Guid(33c395ac3d5224449b92328ba8bceec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1307d7acaef127f992488fb29371a6') in 0.009570 seconds
+  Import took 0.013040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Resources/Graphics/L08,R1,C1,Base III - Enemy,hidden,normal,255.png
+  artifactKey: Guid(97a9ca73d4da67641b300ba63ed6a8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L08,R1,C1,Base III - Enemy,hidden,normal,255.png using Guid(97a9ca73d4da67641b300ba63ed6a8e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57362f2de301fe9b5b559ddbc3ecc45b') in 0.013146 seconds
+  Import took 0.016335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Graphics/L14,R1,C1,Powered cannon III - Enemy,visible,normal,255.png
+  artifactKey: Guid(799d92f9839e75a4ab61852054f19714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L14,R1,C1,Powered cannon III - Enemy,visible,normal,255.png using Guid(799d92f9839e75a4ab61852054f19714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a08a1e182586278dcc212999d98714') in 0.009704 seconds
+  Import took 0.012762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Resources/Graphics/L23,R1,C1,Fast cannon II - Player,hidden,normal,255.png
+  artifactKey: Guid(d0b37f02d4cac394bb6f507b8ead1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L23,R1,C1,Fast cannon II - Player,hidden,normal,255.png using Guid(d0b37f02d4cac394bb6f507b8ead1a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a39925c0dda5ca0a58172c8688a03f0') in 0.012545 seconds
+  Import took 0.015715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Resources/Graphics/L25,R1,C1,Fast cannon I - Player,hidden,normal,255.png
+  artifactKey: Guid(028dc81fbf76a454bbd51972919e3d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L25,R1,C1,Fast cannon I - Player,hidden,normal,255.png using Guid(028dc81fbf76a454bbd51972919e3d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242bed7e48a84839677e5a87f3022e06') in 0.013009 seconds
+  Import took 0.016439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Graphics/L02,R1,C1,Stone 2,hidden,normal,255.png
+  artifactKey: Guid(ebfec2afc7c20994183505a6266fe1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L02,R1,C1,Stone 2,hidden,normal,255.png using Guid(ebfec2afc7c20994183505a6266fe1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde638a6a97f6f420d412d4f7a5eda85') in 0.012593 seconds
+  Import took 0.015780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Resources/Graphics/L07,R1,C1,Trucks,visible,normal,255.png
+  artifactKey: Guid(577003b292f90fe4e8d0710d0d39d256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L07,R1,C1,Trucks,visible,normal,255.png using Guid(577003b292f90fe4e8d0710d0d39d256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575d7be1e3f6e96c0f0e70789edd6878') in 0.014834 seconds
+  Import took 0.018187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Graphics/L05,R1,C1,Flag Player,hidden,normal,255.png
+  artifactKey: Guid(71ac371d888423949991928f863ce139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L05,R1,C1,Flag Player,hidden,normal,255.png using Guid(71ac371d888423949991928f863ce139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec4fa622c46f072dbf0f61e7be9cba0') in 0.013147 seconds
+  Import took 0.016136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resources/Graphics/L21,R1,C1,Fast cannon III - Player,hidden,normal,255.png
+  artifactKey: Guid(b6d1495aa202de040bd691b653909a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L21,R1,C1,Fast cannon III - Player,hidden,normal,255.png using Guid(b6d1495aa202de040bd691b653909a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6705dcaac0493a121065c250165e9f14') in 0.024738 seconds
+  Import took 0.028050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.382024 seconds.
+  path: Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png
+  artifactKey: Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/L04,R1,C1,Base,hidden,normal,255.png using Guid(f8cf3c157f275f741b9d934a06efcd8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f217f96c5cd797a77a260ef50efebd49') in 0.014562 seconds
+  Import took 0.018794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 197.421997 seconds.
+  path: Assets/Resources/Graphics/Palettes
+  artifactKey: Guid(ad831fada2df5e0488d4b2fae73702ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/Palettes using Guid(ad831fada2df5e0488d4b2fae73702ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d21e6b54b04d6d8d3f287545c658110') in 0.010704 seconds
+  Import took 0.014351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.081389 seconds.
+  path: Assets/Resources/Graphics/Palettes/Ground Palettes.prefab
+  artifactKey: Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/Palettes/Ground Palettes.prefab using Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f05fbb2d8626775a56ac49bd5929631') in 0.022023 seconds
+  Import took 0.025662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.075771 seconds.
+  path: Assets/Resources/Graphics/Tiles
+  artifactKey: Guid(77ce86f25c19f80439d6f1b123178f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/Tiles using Guid(77ce86f25c19f80439d6f1b123178f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1503f9ff3ca4b2d3313d0c8d5d43b561') in 0.010130 seconds
+  Import took 0.013404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.733138 seconds.
+  path: Assets/Resources/Graphics/Tiles/Ground.asset
+  artifactKey: Guid(5a00601c93b4a744fa643b8d722030ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Graphics/Tiles/Ground.asset using Guid(5a00601c93b4a744fa643b8d722030ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd2a7fde3f2267ae5977d2fe51baa3d') in 0.023031 seconds
+  Import took 0.026020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 202.451922 seconds.
+  path: Assets/Graphics/Palettes/Ground Palettes.prefab
+  artifactKey: Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Palettes/Ground Palettes.prefab using Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796616f991f24932751b978e8a53174d') in 0.004762 seconds
+  Import took 0.008092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.725295 seconds.
+  path: Assets/Graphics/Palettes/Ground Palettes.prefab
+  artifactKey: Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Palettes/Ground Palettes.prefab using Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fcab67ddb805874dc864b37d28d6ee') in 0.005556 seconds
+  Import took 0.009376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 102.423892 seconds.
+  path: Assets/Graphics/Tiles/Ground_fixed.prefab
+  artifactKey: Guid(96b6b18b5e40e3b46a4e75799d7cf768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Tiles/Ground_fixed.prefab using Guid(96b6b18b5e40e3b46a4e75799d7cf768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baea6a8096a2b03ac37aea4a89dcb361') in 0.008715 seconds
+  Import took 0.012119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Graphics/Tiles/L01,R1,C1,Gound,visible,normal,255.asset
+  artifactKey: Guid(464f827d73f627742b2f6b6b4cc3a3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Tiles/L01,R1,C1,Gound,visible,normal,255.asset using Guid(464f827d73f627742b2f6b6b4cc3a3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc0c0349f52c112d176e4aee30cd17f') in 0.011520 seconds
+  Import took 0.014477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2171.729957 seconds.
+  path: Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79467a625b87716db3f7bfb43fea858b') in 0.019520 seconds
+  Import took 0.024827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 177.869555 seconds.
+  path: Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b1132e8cd7516faa22050ca938aa80') in 0.026219 seconds
+  Import took 0.029721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.971635 seconds.
+  path: Assets/Graphics/Palettes/Ground Palettes.prefab
+  artifactKey: Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Palettes/Ground Palettes.prefab using Guid(d733375969a35e14d8c167f308d94120) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09fc58811ed256f9e80047f4ffdb2a6') in 0.005677 seconds
+  Import took 0.009580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.362047 seconds.
+  path: Assets/Graphics/Tiles/Ground_fixed.prefab
+  artifactKey: Guid(96b6b18b5e40e3b46a4e75799d7cf768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Tiles/Ground_fixed.prefab using Guid(96b6b18b5e40e3b46a4e75799d7cf768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a008ba6f362e3bf9f7333644231e2e') in 0.004280 seconds
+  Import took 0.007927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.707123 seconds.
+  path: Assets/Graphics/Palettes/Ground.prefab
+  artifactKey: Guid(e98c6018d4002494caf5c84d92a88c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Palettes/Ground.prefab using Guid(e98c6018d4002494caf5c84d92a88c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac2a4dd6a54fca6462b6a92ba2d1a1f') in 0.008998 seconds
+  Import took 0.013383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 100.453160 seconds.
+  path: Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd257946f00db21daa4206a151eed9daa') in 0.023396 seconds
+  Import took 0.026712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.619505 seconds.
+  path: Assets/Graphics/Palettes/Ground.prefab
+  artifactKey: Guid(e98c6018d4002494caf5c84d92a88c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/Palettes/Ground.prefab using Guid(e98c6018d4002494caf5c84d92a88c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9640290da1874878bcc117d80d91e2c7') in 0.004909 seconds
+  Import took 0.008046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.242779 seconds.
+  path: Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a88129410304f7b862b56525f21178a') in 0.014443 seconds
+  Import took 0.017682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.839333 seconds.
+  path: Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png
+  artifactKey: Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/L01,R1,C1,Gound,visible,normal,255.png using Guid(5378c1c3be3ba0e4ea7d0e91f7e7c68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c51516df05ccef1dac46c8fd9b5770') in 0.027760 seconds
+  Import took 0.031168 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
