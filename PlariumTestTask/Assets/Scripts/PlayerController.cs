@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 20f;
+    public float interactionRadius = 3f;
     private Rigidbody2D _body;
 
     // Start is called before the first frame update
@@ -27,6 +28,16 @@ public class PlayerController : MonoBehaviour
             movement.y = verticalInput * speed;
             movement = Vector2.ClampMagnitude(movement, speed);
             _body.velocity = movement;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
+
+            foreach (Collider2D hitCollider in hitColliders)
+            {
+                hitCollider.SendMessage("Interact", SendMessageOptions.DontRequireReceiver);
+            }
         }
     }
 }
