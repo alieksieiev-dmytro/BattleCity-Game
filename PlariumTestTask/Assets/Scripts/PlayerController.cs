@@ -19,15 +19,19 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 movement = Vector2.zero;
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
-        if (horizontalInput != 0 || verticalInput != 0)
+        movement.x = horizontalInput;
+        movement.y = verticalInput;
+
+        movement = Vector2.ClampMagnitude(movement, speed);
+        _body.MovePosition(_body.position + movement * speed * Time.fixedDeltaTime);
+
+        if (movement != Vector2.zero)
         {
-            movement.x = horizontalInput * speed;
-            movement.y = verticalInput * speed;
-            movement = Vector2.ClampMagnitude(movement, speed);
-            _body.velocity = movement;
+            transform.rotation =
+                Quaternion.LookRotation(Vector3.back, movement);
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
