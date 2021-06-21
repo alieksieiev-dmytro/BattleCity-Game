@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6994966969790170001
+--- !u!1 &1751208929686086082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8656334538633098112}
-  - component: {fileID: 2966311763697998314}
+  - component: {fileID: 1751208929686086080}
+  - component: {fileID: 1751208929686086083}
   m_Layer: 0
-  m_Name: LRT Templates
+  m_Name: LRTB Templates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8656334538633098112
+--- !u!4 &1751208929686086080
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6994966969790170001}
+  m_GameObject: {fileID: 1751208929686086082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.007135, y: 19.377308, z: -78.47521}
+  m_LocalPosition: {x: 18.679693, y: 16.542692, z: -79.551575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2966311763697998314
+--- !u!114 &1751208929686086083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6994966969790170001}
+  m_GameObject: {fileID: 1751208929686086082}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e00da4b37100254d9f03496e3b2aadc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objects:
-  - {fileID: 7997115585870640802, guid: 8a48db52cc939fd4cb29c869dc20b2e8, type: 3}
-  - {fileID: 7537075086660294130, guid: 063555e8ed42c2a4cb4a9b28d5789479, type: 3}
-  - {fileID: 3770020695164871321, guid: 1ff43f091dedf5d48a61faa5f80a1c23, type: 3}
+  - {fileID: 7741883343849977316, guid: 0011b54acf91d8d41987a5e0ce939a18, type: 3}
+  - {fileID: 3709314198103609480, guid: e9d224e7278ddf64e88824f7bf9a4fc7, type: 3}
+  - {fileID: 1393077079445056447, guid: 75bf7374d9dd4b34face6529e3fa6083, type: 3}
