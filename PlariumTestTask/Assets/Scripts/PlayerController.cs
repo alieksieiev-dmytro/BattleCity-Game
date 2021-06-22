@@ -11,14 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     private GameObject _bullet;
 
-    [SerializeField] private GameObject playerBase;
-
     // Start is called before the first frame update
     void Start()
     {
         _body = GetComponent<Rigidbody2D>();
-        transform.position = playerBase.transform.position;
-        transform.position = new Vector3(transform.position.x + 1f, transform.position.y, transform.position.z);
     }
 
     // Update is called once per frame

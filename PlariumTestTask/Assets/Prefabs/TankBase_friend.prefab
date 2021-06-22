@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 6322555685382014388}
   - component: {fileID: 6322555685382014389}
   - component: {fileID: -612689171874596179}
+  - component: {fileID: 5723497343972684392}
   m_Layer: 0
   m_Name: TankBase_friend
   m_TagString: Untagged
@@ -207,3 +208,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countOfBots: 30
   tanks: []
+--- !u!114 &5723497343972684392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6322555685382014390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2b9a4c7509d0643a951d3638573a3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 7177270927174911089, guid: d6fbc644238195d43be6acc68a00d075, type: 3}

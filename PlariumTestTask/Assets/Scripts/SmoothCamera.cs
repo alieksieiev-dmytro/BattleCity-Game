@@ -12,7 +12,8 @@ public class SmoothCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+        transform.position = targetPosition;
     }
 
     // Update is called once per frame
