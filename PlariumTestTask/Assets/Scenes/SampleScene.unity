@@ -220,7 +220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &44702197
 CircleCollider2D:
@@ -561,6 +561,16 @@ MonoBehaviour:
   - {fileID: 4787602731259979069, guid: 619dcb0b5df07d44987da173a38bf763, type: 3}
   - {fileID: 6994966969790170001, guid: 1f35d911ebcd23a4995d3b9277b63e79, type: 3}
   - {fileID: 1751208929686086082, guid: 11b850cf3afdcf040bf0d691444acb46, type: 3}
+  friendlyRooms:
+  - {fileID: 6036942284604635041, guid: 4912d2cff0c408f43bf0a0893bb4d1b5, type: 3}
+  - {fileID: 1275917086704227350, guid: 0b2e8d42ea142c742b714fafa16114ae, type: 3}
+  - {fileID: 1773525340746554051, guid: 48a3125e06cf5af46bfbd3a96a6c6dc1, type: 3}
+  - {fileID: 5534749523134707222, guid: 03bb88d0888a2de4ebe33d0739322518, type: 3}
+  enemyRooms:
+  - {fileID: 2737787698215030493, guid: c940c3558ee3c024eb8a1c1fee185abd, type: 3}
+  - {fileID: 6520295835231946869, guid: 0a8249b02845d3f4887689de6849c589, type: 3}
+  - {fileID: 8685420318801096744, guid: 9018ec30153df9b4ca837f26a7892ce9, type: 3}
+  - {fileID: 488477346225730782, guid: 983dc1d0fb4e48045add5a6bc41b7ff4, type: 3}
   moveAmount: 10
   minX: 5
   maxX: 35
@@ -581,7 +591,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &818964804
 GameObject:
@@ -21242,6 +21252,7 @@ MonoBehaviour:
   speed: 4
   interactionRadius: 3
   bulletPrefab: {fileID: 4474795443035702321, guid: 4e54f5cfa5c495f46ac934c09db0d099, type: 3}
+  playerBase: {fileID: 6322555685382014390, guid: a22bc8409bb7a2d41868252baad3eb5b, type: 3}
 --- !u!212 &2123854028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21309,7 +21320,7 @@ Transform:
   - {fileID: 818964806}
   - {fileID: 949243081}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &2123854030
 BoxCollider2D:

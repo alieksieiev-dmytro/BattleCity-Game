@@ -7,6 +7,9 @@ public class MapGeneration : MonoBehaviour
     public Transform[] startingPosition;
     public GameObject[] rooms;
 
+    public GameObject[] friendlyRooms;
+    public GameObject[] enemyRooms;
+
     private int direction;
     public float moveAmount;
 
@@ -21,9 +24,19 @@ public class MapGeneration : MonoBehaviour
     {
         int randStartingPos = Random.Range(0, startingPosition.Length);
         transform.position = startingPosition[randStartingPos].position;
-        Instantiate(rooms[0], transform.position, Quaternion.identity);
+        int rand = Random.Range(0, friendlyRooms.Length);
+        Instantiate(friendlyRooms[rand], transform.position, Quaternion.identity);
 
         direction = Random.Range(1, 6);
+
+        if (rand == 3)
+        {
+            direction = 2;
+        }
+        else if (rand == 4)
+        {
+            direction = 5;
+        }
     }
 
     private void Update()
@@ -118,7 +131,9 @@ public class MapGeneration : MonoBehaviour
             }
             else
             {
-                //TODO: Create here the enemy base
+                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
+                Instantiate(enemyRooms[roomDetection.GetComponent<RoomType>().type], transform.position, Quaternion.identity);
+                roomDetection.GetComponent<RoomType>().RoomDestruction();
                 stopGeneration = true;
             }
         }
