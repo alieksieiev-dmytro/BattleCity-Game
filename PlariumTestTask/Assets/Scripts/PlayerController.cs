@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public float interactionRadius = 3f;
     private Rigidbody2D _body;
 
+    [SerializeField] private GameObject bulletPrefab;
+    private GameObject _bullet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,14 @@ public class PlayerController : MonoBehaviour
             {
                 hitCollider.SendMessage("Interact", SendMessageOptions.DontRequireReceiver);
             }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            _bullet = Instantiate(bulletPrefab) as GameObject;
+            _bullet.transform.position =
+                transform.TransformPoint(Vector3.forward * 1.5f);
+            _bullet.transform.rotation = transform.rotation;
         }
     }
 }

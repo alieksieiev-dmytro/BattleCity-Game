@@ -21227,7 +21227,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &2123854027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21242,6 +21242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   interactionRadius: 3
+  bulletPrefab: {fileID: 4474795443035702321, guid: 4e54f5cfa5c495f46ac934c09db0d099, type: 3}
 --- !u!212 &2123854028
 SpriteRenderer:
   m_ObjectHideFlags: 0
