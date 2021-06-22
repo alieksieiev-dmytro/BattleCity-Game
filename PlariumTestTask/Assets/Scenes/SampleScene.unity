@@ -562,7 +562,6 @@ MonoBehaviour:
   - {fileID: 6994966969790170001, guid: 1f35d911ebcd23a4995d3b9277b63e79, type: 3}
   - {fileID: 1751208929686086082, guid: 11b850cf3afdcf040bf0d691444acb46, type: 3}
   moveAmount: 10
-  startTimeBtwRoom: 0.25
   minX: 5
   maxX: 35
   minY: 5
@@ -21227,7 +21226,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2123854027
 MonoBehaviour:
   m_ObjectHideFlags: 0

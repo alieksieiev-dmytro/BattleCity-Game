@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         movement.y = verticalInput;
 
         movement = Vector2.ClampMagnitude(movement, speed);
-        _body.MovePosition(_body.position + movement * speed * Time.fixedDeltaTime);
+        _body.MovePosition(_body.position + movement * speed * Time.deltaTime);
 
         if (movement != Vector2.zero)
         {
@@ -51,7 +51,12 @@ public class PlayerController : MonoBehaviour
         {
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =
-                transform.TransformPoint(Vector3.forward * 1.5f);
+                transform.TransformPoint(0.15f, 0.75f, 1.5f);
+            _bullet.transform.rotation = transform.rotation;
+
+            _bullet = Instantiate(bulletPrefab) as GameObject;
+            _bullet.transform.position =
+                transform.TransformPoint(-0.15f, 0.75f, 1.5f);
             _bullet.transform.rotation = transform.rotation;
         }
     }

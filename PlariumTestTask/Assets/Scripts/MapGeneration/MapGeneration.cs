@@ -10,9 +10,6 @@ public class MapGeneration : MonoBehaviour
     private int direction;
     public float moveAmount;
 
-    private float timeBtwRoom;
-    public float startTimeBtwRoom = 0.25f;
-
     public float minX, maxX, minY;
     public bool stopGeneration;
 
@@ -31,14 +28,9 @@ public class MapGeneration : MonoBehaviour
 
     private void Update()
     {
-        if (timeBtwRoom <= 0 && !stopGeneration)
+        if (!stopGeneration)
         {
             Move();
-            timeBtwRoom = startTimeBtwRoom;
-        }
-        else
-        {
-            timeBtwRoom -= Time.deltaTime;
         }
     }
 
