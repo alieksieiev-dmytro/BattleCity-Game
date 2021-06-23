@@ -49,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            bulletPrefab.GetComponent<Bullet>().Team = Team.BlueTeam;
+
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =
                 transform.TransformPoint(0.15f, 0.75f, 1.5f);

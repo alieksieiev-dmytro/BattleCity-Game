@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
     public int range = 10;
 
+    public Team Team { get; set; }
     private Vector3 startingPosition;
 
     private void Start()
@@ -30,6 +31,11 @@ public class Bullet : MonoBehaviour
     //TODO: React to target
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.GetComponent<EnemyBase>() != null && this.Team == Team.BlueTeam)
+        {
+            collision.SendMessage("Damage", damage);
+        }
+
         Destroy(gameObject);
     }
 }
