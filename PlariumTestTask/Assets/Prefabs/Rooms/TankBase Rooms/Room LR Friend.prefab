@@ -866,6 +866,7 @@ GameObject:
   - component: {fileID: 6036942284604635040}
   - component: {fileID: 3418411360209708629}
   - component: {fileID: 3680402831050363957}
+  - component: {fileID: -7936855210010772466}
   m_Layer: 9
   m_Name: Room LR Friend
   m_TagString: Untagged
@@ -955,6 +956,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-7936855210010772466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6036942284604635041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b7fed98e5c59643a9982838d7ccb21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 648435039823466621}
 --- !u!1 &6036942284669493764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,6 +1431,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a22bc8409bb7a2d41868252baad3eb5b, type: 3}
+--- !u!1 &648435039823466621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6322555685382014390, guid: a22bc8409bb7a2d41868252baad3eb5b, type: 3}
+  m_PrefabInstance: {fileID: 6863924393157481931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &648435039823466608 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6322555685382014395, guid: a22bc8409bb7a2d41868252baad3eb5b, type: 3}

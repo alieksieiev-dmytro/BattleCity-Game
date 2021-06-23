@@ -20,7 +20,7 @@ public class MapGeneration : MonoBehaviour
 
     private int downcounter;
 
-    private bool isFirstRoom = false;
+    public Transform player;
 
     private Transform fixedStartingPosition;
     private int fixedStartingRoom;
@@ -139,11 +139,28 @@ public class MapGeneration : MonoBehaviour
                 Instantiate(friendlyRooms[fixedStartingRoom], fixedStartingPosition.position, Quaternion.identity);
                 startingRoomDetection.GetComponent<RoomType>().RoomDestruction();
 
+                SpawnPlayer();
 
                 stopGeneration = true;
             }
         }
     }
 
+    private void SpawnPlayer()
+    {
+        SpawnPoint sp  = friendlyRooms[fixedStartingRoom].GetComponent<SpawnPoint>();
+        Vector3 newPosition = sp.spawnPoint.transform.position;
+        if (fixedStartingPosition.position.x > 5)
+        {
+            player.position = new Vector3(newPosition.x
+                - 4f
+                + fixedStartingPosition.position.x, newPosition.y, player.position.z);
+        }
+        else
+        {
 
+            player.position = new Vector3(newPosition.x
+                + 1f, newPosition.y, player.position.z);
+        }
+    }
 }
