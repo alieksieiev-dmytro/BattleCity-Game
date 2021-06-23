@@ -20,23 +20,22 @@ public class MapGeneration : MonoBehaviour
 
     private int downcounter;
 
+    private bool isFirstRoom = false;
+
+    private Transform fixedStartingPosition;
+    private int fixedStartingRoom;
+
     private void Start()
     {
         int randStartingPos = Random.Range(0, startingPosition.Length);
         transform.position = startingPosition[randStartingPos].position;
-        int rand = Random.Range(0, friendlyRooms.Length);
-        Instantiate(friendlyRooms[rand], transform.position, Quaternion.identity);
+        int rand = Random.Range(0, rooms.Length);
+        Instantiate(rooms[rand], transform.position, Quaternion.identity);
+
+        fixedStartingPosition = startingPosition[randStartingPos];
+        fixedStartingRoom = rand;
 
         direction = Random.Range(1, 6);
-
-        if (rand == 3)
-        {
-            direction = 2;
-        }
-        else if (rand == 4)
-        {
-            direction = 5;
-        }
     }
 
     private void Update()
@@ -118,6 +117,7 @@ public class MapGeneration : MonoBehaviour
                             randBottomRoom = 1;
                         }
                         Instantiate(rooms[randBottomRoom], transform.position, Quaternion.identity);
+                        fixedStartingRoom = randBottomRoom;
                     }
                 }
 
@@ -134,8 +134,16 @@ public class MapGeneration : MonoBehaviour
                 Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
                 Instantiate(enemyRooms[roomDetection.GetComponent<RoomType>().type], transform.position, Quaternion.identity);
                 roomDetection.GetComponent<RoomType>().RoomDestruction();
+
+                Collider2D startingRoomDetection = Physics2D.OverlapCircle(fixedStartingPosition.position, 1, room);
+                Instantiate(friendlyRooms[fixedStartingRoom], fixedStartingPosition.position, Quaternion.identity);
+                startingRoomDetection.GetComponent<RoomType>().RoomDestruction();
+
+
                 stopGeneration = true;
             }
         }
     }
+
+
 }
