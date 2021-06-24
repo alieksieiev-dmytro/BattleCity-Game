@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("More than one instance of inventory found");
+            Debug.LogWarning("More than one instance of Inventory found");
             return;
         }
 
@@ -22,34 +22,38 @@ public class Inventory : MonoBehaviour
 
     #endregion
 
-    public Item[] modules;
-    public Sprite[] sprites;
-    private SpriteRenderer[] currentSprites;
-
-    [SerializeField]public TankEquipment player;
-
     public delegate void OnItemChanged();
-    public OnItemChanged OnItemChangedCallback;
+    public OnItemChanged onItemChangedCallback;
 
-    private void Start()
+    public List<Item> items = new List<Item>();
+
+    public int space = 4;
+
+    public bool Add(Item item)
     {
-        currentSprites = new SpriteRenderer[modules.Length];
-
-        foreach (Item module in modules)
+        if (items.Count >= space)
         {
-            Debug.Log(module.name);
-            Debug.Log(module.sprite.name);
-
-            Sprite sprite = module.sprite;
-
-            player.spriteRenderers[(int)module.module].sprite = sprite;
+            Debug.Log("Not enough space.");
+            return false;
         }
+        else
+        {
+            items.Add(item);
+            if (onItemChangedCallback != null)
+            {
+                onItemChangedCallback.Invoke();
+            }
+        }
+
+        return true;
     }
 
-    public void Add(Item item)
+    public void Remove(Item item)
     {
-        modules[(int)item.module] = item;
-        player.spriteRenderers[(int)item.module].sprite = item.sprite;
-        //OnItemChangedCallback.Invoke();
+        items.Remove(item);
+        if (onItemChangedCallback != null)
+        {
+            onItemChangedCallback.Invoke();
+        }
     }
 }

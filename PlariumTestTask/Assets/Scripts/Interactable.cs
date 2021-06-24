@@ -6,7 +6,7 @@ public class Interactable : MonoBehaviour
 {
     public float radius = 3f;
 
-    public virtual void Interact()
+    public virtual void Use()
     {
         Debug.Log("Interaction with " + transform.name);
     }

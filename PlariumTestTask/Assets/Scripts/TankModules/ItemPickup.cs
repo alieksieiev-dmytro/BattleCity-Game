@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class ItemPickup : Interactable
 {
-    public Item item;
-    public TankModules module;
+    public Module item;
 
-    public override void Interact()
+    public override void Use()
     {
-        base.Interact();
+        base.Use();
 
         PickUp();
     }
@@ -17,7 +16,9 @@ public class ItemPickup : Interactable
     void PickUp()
     {
         Debug.Log("Picking up " + item.name);
-        Inventory.instance.Add(item);
+
+        ModuleManager.instance.Equip(item);
+
         Destroy(gameObject);
     }
 }

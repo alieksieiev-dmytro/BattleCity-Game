@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
             foreach (Collider2D hitCollider in hitColliders)
             {
-                hitCollider.SendMessage("Interact", SendMessageOptions.DontRequireReceiver);
+                hitCollider.SendMessage("Use", SendMessageOptions.DontRequireReceiver);
             }
         }
 

@@ -12,4 +12,10 @@ public class SpawnObject : MonoBehaviour
         GameObject instance = (GameObject)Instantiate(objects[rand], transform.position, Quaternion.identity);
         instance.transform.parent = transform;
     }
+
+    public GameObject GetRandomObject()
+    {
+        int rand = Random.Range(0, objects.Length);
+        return objects[rand];
+    }
 }
