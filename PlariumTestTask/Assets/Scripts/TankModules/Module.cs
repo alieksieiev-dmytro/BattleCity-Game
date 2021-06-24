@@ -10,9 +10,10 @@ public class Module : Item
     public TankModules module;
 
     public int healthModifier;
-    public int speedModifier;
+    public float speedModifier;
     public int damageModifier;
-    public int accuracyModifier;
+    public float accuracyModifier;
+    public float attackRange;
 
     public override void Use()
     {

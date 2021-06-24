@@ -6,25 +6,32 @@ public class PlayerStats : TankStats
 {
     private void Start()
     {
-        //Inventory.instance.OnItemChangedCallback += OnItemChanged;
+        ModuleManager.instance.onModuleChanged += OnModuleChanged;
+
+        for (int i = 0; i < ModuleManager.instance.currentModules.Length; i++)
+        {
+            OnModuleChanged(ModuleManager.instance.currentModules[i], null);
+        }
     }
 
-    void OnItemChanged(Module newItem, Module oldItem)
+    void OnModuleChanged(Module newItem, Module oldItem)
     {
         if (newItem != null)
         {
-            health.AddModifier(newItem.healthModifier);
+            maxHealth.AddModifier(newItem.healthModifier);
             damage.AddModifier(newItem.damageModifier);
             speed.AddModifier(newItem.speedModifier);
             accuracy.AddModifier(newItem.accuracyModifier);
+            attackRange.AddModifier(newItem.attackRange);
         }
 
         if (oldItem != null)
         {
-            health.RemoveModifier(oldItem.healthModifier);
+            maxHealth.RemoveModifier(oldItem.healthModifier);
             damage.RemoveModifier(oldItem.damageModifier);
             speed.RemoveModifier(oldItem.speedModifier);
             accuracy.RemoveModifier(oldItem.accuracyModifier);
+            attackRange.AddModifier(newItem.attackRange);
         }
     }
 }

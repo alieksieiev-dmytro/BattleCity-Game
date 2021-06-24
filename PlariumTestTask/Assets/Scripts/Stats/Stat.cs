@@ -1,31 +1,47 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Stat<T>
+public class Stat
 {
     [SerializeField]
-    private T baseValue;
+    private float baseValue;
+    public StatsTypes type;
 
-    private List<T> modifiers = new List<T>();
+    private List<float> modifiers = new List<float>();
 
-    public T GetValue()
+    public float GetValue()
     {
-        return baseValue;
+        float finalValue = baseValue;
+
+        if (type == StatsTypes.Damage || type == StatsTypes.Health || type == StatsTypes.Range)
+        {
+            modifiers.ForEach(x => finalValue += x);
+        }
+        else if (type == StatsTypes.Accuracy)
+        {
+            modifiers.ForEach(x => finalValue *= x);
+        }
+        else if (type == StatsTypes.Speed)
+        {
+            modifiers.ForEach(x => finalValue /= x);
+        }
+
+        return finalValue;
     }
 
-    public void AddModifier(T modifier)
+    public void AddModifier(float modifier)
     {
-        if (modifier != null)
+        if (modifier != 0)
         {
             modifiers.Add(modifier);
         }
     }
-
-    public void RemoveModifier(T modifier)
+     
+    public void RemoveModifier(float modifier)
     {
-        if (modifier != null)
+        if (modifier != 0)
         {
             modifiers.Remove(modifier);
         }

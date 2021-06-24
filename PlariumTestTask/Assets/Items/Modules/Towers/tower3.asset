@@ -19,4 +19,5 @@ MonoBehaviour:
   healthModifier: 0
   speedModifier: 0
   damageModifier: 0
-  accuracyModifier: 0
+  accuracyModifier: 0.9
+  attackRange: 0

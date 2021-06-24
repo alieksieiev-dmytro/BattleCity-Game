@@ -5,8 +5,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 10f;
-    public int damage = 1;
-    public int range = 10;
+    public float damage = 1;
+    public float range = 10;
+    public float accuracy = 0.7f;
 
     public Team Team { get; set; }
     private Vector3 startingPosition;
@@ -18,7 +19,7 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, startingPosition) < range)
+        if (Vector3.Distance(transform.position, startingPosition) <= range)
         {
             transform.Translate(new Vector3(0, 1) * Time.deltaTime * speed);
         }

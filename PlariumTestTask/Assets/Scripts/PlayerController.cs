@@ -10,14 +10,15 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameObject bulletPrefab;
     private GameObject _bullet;
+    private PlayerStats stats;
 
-    // Start is called before the first frame update
     void Start()
     {
+        stats = GetComponent<PlayerStats>();
         _body = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         Vector2 movement = Vector2.zero;
@@ -28,8 +29,8 @@ public class PlayerController : MonoBehaviour
         movement.x = horizontalInput;
         movement.y = verticalInput;
 
-        movement = Vector2.ClampMagnitude(movement, speed);
-        _body.MovePosition(_body.position + movement * speed * Time.deltaTime);
+        movement = Vector2.ClampMagnitude(movement, stats.speed.GetValue());
+        _body.MovePosition(_body.position + movement * stats.speed.GetValue() * Time.deltaTime);
 
         if (movement != Vector2.zero)
         {
@@ -49,7 +50,12 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            PlayerStats ps = GetComponent<PlayerStats>();
+
             bulletPrefab.GetComponent<Bullet>().Team = Team.BlueTeam;
+            bulletPrefab.GetComponent<Bullet>().damage = ps.damage.GetValue();
+            bulletPrefab.GetComponent<Bullet>().range = ps.attackRange.GetValue();
+            bulletPrefab.GetComponent<Bullet>().accuracy = ps.accuracy.GetValue();
 
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =

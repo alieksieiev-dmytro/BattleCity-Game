@@ -16,7 +16,8 @@ MonoBehaviour:
   isDefaultItem: 0
   sprite: {fileID: 6304232220460804414, guid: 3164d7a1647f58b47bd5a7f8c02fa9bf, type: 3}
   module: 1
-  healthModifier: 0
-  speedModifier: 0
+  healthModifier: 6
+  speedModifier: 2
   damageModifier: 0
   accuracyModifier: 0
+  attackRange: 0

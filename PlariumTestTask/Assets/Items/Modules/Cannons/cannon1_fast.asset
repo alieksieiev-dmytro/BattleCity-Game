@@ -18,5 +18,6 @@ MonoBehaviour:
   module: 2
   healthModifier: 0
   speedModifier: 0
-  damageModifier: 0
+  damageModifier: 1
   accuracyModifier: 0
+  attackRange: 3

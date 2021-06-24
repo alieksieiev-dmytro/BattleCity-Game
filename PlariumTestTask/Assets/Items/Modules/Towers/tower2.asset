@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: tower2
   m_EditorClassIdentifier: 
   name: Tower 2
-  icon: {fileID: 21300000, guid: 6975158676c051f488f5c64dc88c0c27, type: 3}
   isDefaultItem: 0
   sprite: {fileID: 7237877702662964589, guid: 6c296520234b0db40a9d8fd8dd0b1c95, type: 3}
   module: 3
   healthModifier: 0
   speedModifier: 0
   damageModifier: 0
-  accuracyModifier: 0
+  accuracyModifier: 0.8
+  attackRange: 0

@@ -23,7 +23,7 @@ public class ModuleManager : MonoBehaviour
     #endregion
 
     public SpriteRenderer targetSprite;
-    Module[] currentModules;
+    public Module[] currentModules;
     SpriteRenderer[] currentSprites;
 
     public GameObject[] defaultModules;
