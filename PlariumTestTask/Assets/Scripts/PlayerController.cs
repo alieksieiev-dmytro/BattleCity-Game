@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     {
         stats = GetComponent<PlayerStats>();
         _body = GetComponent<Rigidbody2D>();
+
+        speed = stats.speed.GetValue();
     }
 
 
@@ -50,12 +52,10 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            PlayerStats ps = GetComponent<PlayerStats>();
-
             bulletPrefab.GetComponent<Bullet>().Team = Team.BlueTeam;
-            bulletPrefab.GetComponent<Bullet>().damage = ps.damage.GetValue();
-            bulletPrefab.GetComponent<Bullet>().range = ps.attackRange.GetValue();
-            bulletPrefab.GetComponent<Bullet>().accuracy = ps.accuracy.GetValue();
+            bulletPrefab.GetComponent<Bullet>().damage = stats.damage.GetValue();
+            bulletPrefab.GetComponent<Bullet>().range = stats.attackRange.GetValue();
+            bulletPrefab.GetComponent<Bullet>().accuracy = stats.accuracy.GetValue();
 
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =
