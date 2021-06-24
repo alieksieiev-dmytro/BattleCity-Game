@@ -61,21 +61,18 @@ public class ModuleManager : MonoBehaviour
 
         currentModules[moduleType] = newModule;
 
-        //SpriteRenderer sprite = Instantiate<SpriteRenderer>(new SpriteRenderer());
-        //sprite.sortingOrder = moduleType++;
-        //sprite.sprite = currentSprites[moduleType].sprite;
-        //sprite.transform.position = targetSprite.transform.position;
-        //sprite.transform.parent = targetSprite.transform;
-
         SpriteRenderer newSprite = Instantiate<SpriteRenderer>(newModule.sprite);
-        newSprite.transform.position = targetSprite.transform.position;
         newSprite.transform.parent = targetSprite.transform;
+        newSprite.transform.position = targetSprite.transform.position;
         Destroy(newSprite.GetComponent<ItemPickup>());
 
         if (!_isDefaultModule)
         {
+            newSprite.transform.rotation = targetSprite.transform.rotation;
+            newSprite.transform.Rotate(new Vector3(0, 0, -90), Space.Self);
             Destroy(oldSprite.gameObject);
         }
+
 
         currentSprites[moduleType] = newSprite;
     }
