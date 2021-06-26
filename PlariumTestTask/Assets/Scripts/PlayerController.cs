@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         movement.y = verticalInput;
 
         movement = Vector2.ClampMagnitude(movement, stats.speed.GetValue());
+
         _body.MovePosition(_body.position + movement * stats.speed.GetValue() * Time.deltaTime);
 
         if (movement != Vector2.zero)
@@ -53,18 +54,18 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             bulletPrefab.GetComponent<Bullet>().Team = Team.BlueTeam;
-            bulletPrefab.GetComponent<Bullet>().damage = stats.damage.GetValue();
+            bulletPrefab.GetComponent<Bullet>().Damage = stats.damage.GetValue();
             bulletPrefab.GetComponent<Bullet>().range = stats.attackRange.GetValue();
             bulletPrefab.GetComponent<Bullet>().accuracy = stats.accuracy.GetValue();
 
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =
-                transform.TransformPoint(0.15f, 0.75f, 1.5f);
+                transform.TransformPoint(0.15f, 1f, 1.5f);
             _bullet.transform.rotation = transform.rotation;
 
             _bullet = Instantiate(bulletPrefab) as GameObject;
             _bullet.transform.position =
-                transform.TransformPoint(-0.15f, 0.75f, 1.5f);
+                transform.TransformPoint(-0.15f, 1f, 1.5f);
             _bullet.transform.rotation = transform.rotation;
         }
     }

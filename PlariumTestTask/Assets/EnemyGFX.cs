@@ -6,6 +6,8 @@ using Pathfinding;
 
 public class EnemyGFX : MonoBehaviour
 {
+    public float rotatingSpeed = 150.0f;
+
     public AIPath aiPath;
     public Transform target;
 
@@ -20,7 +22,7 @@ public class EnemyGFX : MonoBehaviour
         {
             float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 6f * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 150f * Time.deltaTime);
         }
     }
 }

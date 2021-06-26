@@ -65,6 +65,7 @@ public class ModuleManager : MonoBehaviour
         newSprite.transform.parent = targetSprite.transform;
         newSprite.transform.position = targetSprite.transform.position;
         Destroy(newSprite.GetComponent<ItemPickup>());
+        Destroy(newSprite.GetComponent<Collider2D>());
 
         if (!_isDefaultModule)
         {

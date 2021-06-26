@@ -9,6 +9,7 @@ public class TankStats : MonoBehaviour
     public Stat maxHealth;
     public Stat accuracy;
     public Stat attackRange;
+    public Team Team;
 
     private void Awake()
     {
