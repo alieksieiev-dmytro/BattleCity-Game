@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MapGeneration : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class MapGeneration : MonoBehaviour
     private Transform fixedStartingPosition;
     private int fixedStartingRoom;
 
+    public AstarPath astarPath;
+
     private void Start()
     {
         int randStartingPos = Random.Range(0, startingPosition.Length);
@@ -43,6 +46,10 @@ public class MapGeneration : MonoBehaviour
         if (!stopGeneration)
         {
             Move();
+        }
+        else
+        {
+            astarPath.Scan();
         }
     }
 
@@ -131,13 +138,13 @@ public class MapGeneration : MonoBehaviour
             }
             else
             {
-                Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
-                Instantiate(enemyRooms[roomDetection.GetComponent<RoomType>().type], transform.position, Quaternion.identity);
-                roomDetection.GetComponent<RoomType>().RoomDestruction();
+                Collider2D endRoomDetection = Physics2D.OverlapCircle(transform.position, 1, room);
+                Instantiate(enemyRooms[endRoomDetection.GetComponent<RoomType>().type], transform.position, Quaternion.identity);
+                endRoomDetection.GetComponent<RoomType>().RoomDestruction();
 
-                Collider2D startingRoomDetection = Physics2D.OverlapCircle(fixedStartingPosition.position, 1, room);
+                Collider2D startRoomDetection = Physics2D.OverlapCircle(fixedStartingPosition.position, 1, room);
                 Instantiate(friendlyRooms[fixedStartingRoom], fixedStartingPosition.position, Quaternion.identity);
-                startingRoomDetection.GetComponent<RoomType>().RoomDestruction();
+                startRoomDetection.GetComponent<RoomType>().RoomDestruction();
 
                 SpawnPlayer();
 
