@@ -54,10 +54,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            bulletPrefab.GetComponent<Bullet>().Team = Team.BlueTeam;
-            bulletPrefab.GetComponent<Bullet>().Damage = stats.damage.GetValue();
-            bulletPrefab.GetComponent<Bullet>().range = stats.attackRange.GetValue();
-            bulletPrefab.GetComponent<Bullet>().accuracy = stats.accuracy.GetValue();
+            Bullet bullet = bulletPrefab.GetComponent<Bullet>();
+            bullet.Team = stats.Team;
+            bullet.Damage = stats.damage.GetValue();
+            bullet.range = stats.attackRange.GetValue();
+            bullet.accuracy = stats.accuracy.GetValue();
 
             float bulletPositionX = -0.15f;
 

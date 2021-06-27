@@ -39,7 +39,6 @@ public class EnemyShooter : MonoBehaviour
             }
             
         }
-        /////////////
         if (aiPath.desiredVelocity != Vector3.zero)
         {
             float angle = Mathf.Atan2(aiPath.desiredVelocity.y, aiPath.desiredVelocity.x) * Mathf.Rad2Deg;
@@ -47,8 +46,6 @@ public class EnemyShooter : MonoBehaviour
         }
         else
         {
-            //targetV = aiPath.destination;
-
             float angle = Mathf.Atan2(setter.target.position.y - transform.position.y, setter.target.position.x - transform.position.x) * Mathf.Rad2Deg;
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 150f * Time.deltaTime);
@@ -63,18 +60,17 @@ public class EnemyShooter : MonoBehaviour
         bullet.range = stats.attackRange.GetValue();
         bullet.accuracy = stats.accuracy.GetValue();
 
+        float bulletPositionY = -0.15f;
 
+        for (int i = 0; i < stats.countOfBullets.GetValue(); i++)
+        {
+            _bullet = Instantiate(bulletPrefab) as GameObject;
+            _bullet.transform.position =
+                transform.TransformPoint(1f, bulletPositionY, 1.5f);
+            _bullet.transform.rotation = transform.rotation * Quaternion.Euler(0, 0, -90);
 
-        _bullet = Instantiate(bulletPrefab) as GameObject;
-        _bullet.transform.position =
-            transform.TransformPoint(1f, 0.15f, 1.5f);
-        _bullet.transform.rotation = transform.rotation * Quaternion.Euler(0, 0, -90);
-
-        _bullet = Instantiate(bulletPrefab) as GameObject;
-        _bullet.transform.position =
-            transform.TransformPoint(1f, -0.15f, 1.5f);
-        _bullet.transform.rotation = transform.rotation * Quaternion.Euler(0, 0, -90);
-        //_bullet.transform.rotation = transform.rotation;
+            bulletPositionY += 0.3f;
+        }
     }
 
     IEnumerator FireDelay()

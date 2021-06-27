@@ -21,3 +21,4 @@ MonoBehaviour:
   damageModifier: 6
   accuracyModifier: 0
   attackRange: 8
+  countOfBullets: 1

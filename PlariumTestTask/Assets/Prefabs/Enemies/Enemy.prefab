@@ -175,6 +175,9 @@ MonoBehaviour:
   attackRange:
     baseValue: 4
     type: 4
+  countOfBullets:
+    baseValue: 2
+    type: 0
   Team: 1
 --- !u!50 &-2311504191681986900
 Rigidbody2D:
