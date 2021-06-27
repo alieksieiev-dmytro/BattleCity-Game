@@ -25,6 +25,10 @@ public class EnemyShooter : MonoBehaviour
         {
             setter.target = player.GetComponent<Transform>();
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Update()

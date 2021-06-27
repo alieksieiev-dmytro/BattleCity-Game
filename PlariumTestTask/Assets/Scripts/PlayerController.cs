@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private GameObject _bullet;
     private PlayerStats stats;
 
+    private bool _canShoot = true;
+
     void Start()
     {
         stats = GetComponent<PlayerStats>();
@@ -52,7 +54,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && _canShoot)
         {
             Bullet bullet = bulletPrefab.GetComponent<Bullet>();
             bullet.Team = stats.Team;
@@ -71,6 +73,15 @@ public class PlayerController : MonoBehaviour
 
                 bulletPositionX += 0.3f;
             }
+
+            _canShoot = false;
+            StartCoroutine(FireDelay());
         }
+    }
+
+    IEnumerator FireDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        _canShoot = true;
     }
 }
