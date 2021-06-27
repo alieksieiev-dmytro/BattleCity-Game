@@ -93,9 +93,8 @@ GameObject:
   - component: {fileID: 2689996604241909244}
   - component: {fileID: 2689996604241909235}
   - component: {fileID: 2689996604241909234}
-  - component: {fileID: 8875842227034530493}
   - component: {fileID: -8469699039515258164}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TankBase_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,20 +193,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8875842227034530493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2689996604241909233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b6ebdfe3ff967a43b8ce1c9cf3b3800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countOfBots: 30
-  tanks: []
 --- !u!114 &-8469699039515258164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,3 +205,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb8dfc9627d46c48a99129302f9d542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage:
+    baseValue: 0
+    type: 0
+  speed:
+    baseValue: 0
+    type: 0
+  maxHealth:
+    baseValue: 30
+    type: 0
+  accuracy:
+    baseValue: 0
+    type: 0
+  attackRange:
+    baseValue: 0
+    type: 0
+  Team: 1
+  Tank: {fileID: 4925253216849100371, guid: 1fd779936939b1143a260af39fb09665, type: 3}
+  TanksLeft: 30
+  CurrentAmountOfTanks: 0
+  isLeft: 1

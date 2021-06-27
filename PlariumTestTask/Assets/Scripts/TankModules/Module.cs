@@ -14,6 +14,7 @@ public class Module : Item
     public int damageModifier;
     public float accuracyModifier;
     public float attackRange;
+    public int countOfBullets;
 
     public override void Use()
     {

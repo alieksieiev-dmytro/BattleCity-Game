@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4925253216849100369}
   - component: {fileID: 4925253216849100382}
-  - component: {fileID: -5858546055192031072}
   - component: {fileID: 4925253216849100383}
   - component: {fileID: 4925253216849100368}
   - component: {fileID: 4925253216849100370}
   - component: {fileID: 8514827126985353718}
   - component: {fileID: 4888308218459369496}
+  - component: {fileID: -2311504191681986900}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4925253216849100371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 35.5, z: -105.1558}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4925253217858334105}
   m_Father: {fileID: 0}
@@ -66,19 +66,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &-5858546055192031072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4925253216849100371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 826051a2d79efd3459d0f659c0b724e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destination: {fileID: 0}
 --- !u!114 &4925253216849100383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +125,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 4925253216849100371}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4968fa778f3437e48b1e77744a10c96f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -160,6 +147,7 @@ MonoBehaviour:
   setter: {fileID: 4925253216849100368}
   stats: {fileID: 4888308218459369496}
   bulletPrefab: {fileID: 4474795443035702321, guid: 4e54f5cfa5c495f46ac934c09db0d099, type: 3}
+  aiPath: {fileID: 4925253216849100383}
 --- !u!114 &4888308218459369496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,16 +165,38 @@ MonoBehaviour:
     type: 0
   speed:
     baseValue: 0
-    type: 0
+    type: 2
   maxHealth:
-    baseValue: 0
-    type: 0
+    baseValue: 6
+    type: 1
   accuracy:
-    baseValue: 0
-    type: 0
+    baseValue: 0.8
+    type: 3
   attackRange:
     baseValue: 4
-    type: 0
+    type: 4
+  Team: 1
+--- !u!50 &-2311504191681986900
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925253216849100371}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4925253216884347125
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 4925253217858334106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4925253216988378542}
   - {fileID: 4925253216884347124}
@@ -400,7 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotatingSpeed: 150
   aiPath: {fileID: 4925253216849100383}
-  target: {fileID: 0}
+  targetV: {x: 0, y: 0, z: 0}
 --- !u!1 &4925253218248555932
 GameObject:
   m_ObjectHideFlags: 0

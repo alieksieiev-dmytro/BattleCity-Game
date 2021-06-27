@@ -93,9 +93,8 @@ GameObject:
   - component: {fileID: 6322555685382014395}
   - component: {fileID: 6322555685382014388}
   - component: {fileID: 6322555685382014389}
-  - component: {fileID: -612689171874596179}
   - component: {fileID: 5723497343972684392}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TankBase_friend
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,20 +193,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-612689171874596179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6322555685382014390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b6ebdfe3ff967a43b8ce1c9cf3b3800, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  countOfBots: 30
-  tanks: []
 --- !u!114 &5723497343972684392
 MonoBehaviour:
   m_ObjectHideFlags: 0

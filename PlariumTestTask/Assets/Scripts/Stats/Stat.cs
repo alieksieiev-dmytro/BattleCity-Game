@@ -15,7 +15,7 @@ public class Stat
     {
         float finalValue = baseValue;
 
-        if (type == StatsTypes.Damage || type == StatsTypes.Health || type == StatsTypes.Range)
+        if (type == StatsTypes.Damage || type == StatsTypes.Health || type == StatsTypes.Range || type == StatsTypes.CountOfBullets)
         {
             modifiers.ForEach(x => finalValue += x);
         }
@@ -27,6 +27,7 @@ public class Stat
         {
             modifiers.ForEach(x => finalValue /= x);
         }
+
 
         return finalValue;
     }

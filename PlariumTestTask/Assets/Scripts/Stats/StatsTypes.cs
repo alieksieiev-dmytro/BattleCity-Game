@@ -8,5 +8,6 @@ public enum StatsTypes
     Health,
     Speed,
     Accuracy,
-    Range
+    Range,
+    CountOfBullets
 }

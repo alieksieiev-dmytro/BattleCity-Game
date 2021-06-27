@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -58,15 +59,17 @@ public class PlayerController : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().range = stats.attackRange.GetValue();
             bulletPrefab.GetComponent<Bullet>().accuracy = stats.accuracy.GetValue();
 
-            _bullet = Instantiate(bulletPrefab) as GameObject;
-            _bullet.transform.position =
-                transform.TransformPoint(0.15f, 1f, 1.5f);
-            _bullet.transform.rotation = transform.rotation;
+            float bulletPositionX = -0.15f;
 
-            _bullet = Instantiate(bulletPrefab) as GameObject;
-            _bullet.transform.position =
-                transform.TransformPoint(-0.15f, 1f, 1.5f);
-            _bullet.transform.rotation = transform.rotation;
+            for (int i = 0; i < stats.countOfBullets.GetValue(); i++)
+            {
+                _bullet = Instantiate(bulletPrefab) as GameObject;
+                _bullet.transform.position =
+                    transform.TransformPoint(bulletPositionX, 1f, 1.5f);
+                _bullet.transform.rotation = transform.rotation;
+
+                bulletPositionX += 0.3f;
+            }
         }
     }
 }

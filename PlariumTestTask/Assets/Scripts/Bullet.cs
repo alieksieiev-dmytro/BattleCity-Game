@@ -36,13 +36,12 @@ public class Bullet : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<TankStats>().Team != this.Team)
             {
-                collision.SendMessage("TakeDamage", this.Damage);
+                float chance = Random.Range(0, 100);
+                if (chance <= accuracy * 100)
+                {
+                    collision.SendMessage("TakeDamage", this.Damage);
+                }
             }
-        }
-
-        if (collision.gameObject.GetComponent<EnemyBase>() != null && this.Team == Team.BlueTeam)
-        {
-            collision.SendMessage("Damage", Damage);
         }
 
         Destroy(gameObject);

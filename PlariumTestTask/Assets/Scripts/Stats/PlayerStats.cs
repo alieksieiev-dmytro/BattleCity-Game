@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : TankStats
 {
@@ -23,6 +24,7 @@ public class PlayerStats : TankStats
             speed.AddModifier(newItem.speedModifier);
             accuracy.AddModifier(newItem.accuracyModifier);
             attackRange.AddModifier(newItem.attackRange);
+            countOfBullets.AddModifier(newItem.countOfBullets);
         }
 
         if (oldItem != null)
@@ -31,7 +33,15 @@ public class PlayerStats : TankStats
             damage.RemoveModifier(oldItem.damageModifier);
             speed.RemoveModifier(oldItem.speedModifier);
             accuracy.RemoveModifier(oldItem.accuracyModifier);
-            attackRange.AddModifier(newItem.attackRange);
+            attackRange.RemoveModifier(newItem.attackRange);
+            countOfBullets.RemoveModifier(newItem.countOfBullets);
         }
+    }
+
+    public override void Die()
+    {
+        Debug.Log(transform.name + " died.");
+        Destroy(gameObject);
+        SessionManager.instance.GameLose();
     }
 }
